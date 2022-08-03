@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile page</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <ul class="nav-links">
+            <li class="nav-title">Profile</li>
+            <li><a class="menu" href="#">Home</a></li>
+            <li><a id="active" href="#">My Profile</a></li>
+            <li><a class="menu" href="#">Find Connections</a></li>
+        </ul>
+        <button class="sign-out">Sign out</button>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <article class="card">
+                <div class="card-header">
+                    <img src="images\jane-m.jpg" alt="Profile Picture">
+                </div>
+                <div class="content">
+                    <h2>Jane Doe</h2>
+                    <p class="location">
+                        <img src="images\map-marker.png" alt="map icon">
+                        Seattle
+                    </p>
+                    <p>Developer | Engineer | Problem Solver <br>
+                        Master of Shadows and the Internet! </p>
+                    <a href="#" onclick=" newName()">
+                        <img src="images\gear.png" alt="Gear icon">
+                        edit profile
+                    </a>
+                </div>
+            </article>
+            <article class="info">
+                <h2 id="ed-title">Education</h2>
+                <div id="text-info">
+                    <h3>Coding Dojo - Full Stack Bootcamp </h3>
+                    <h4>Dec 2019 - Mar 2020</h4>
+                    <p>Triple black belt in Python, MERN, and C#</p>
+                </div>
+            </article>
+        </div>
+        <div class="aside">
+            <article class="requests">
+                <h2><span class="number" id="requestnum"> 2 </span>Connection Requests</h2>
+                <ul class="request-ppl">
+                    <li class="user-tag" id="user1">
+                        <p>
+                        <img class="picts" src="images\todd-s.jpg" alt="Todd's selfie">
+                        Todd E
+                        <img class="picts" onclick="addUser('#user1')" src="images\accept-circle.png" alt="Accept">
+                        <img class="picts" onclick="byeUser('#user1')" src="images\close-circle.png"  alt="Deny" >
+                        </p>
+                    </li>
+                    <li class="user-tag" id="user2">
+                        <p>
+                            <img class="picts" src="images\phil-s.jpg" alt="Phil's selfie">
+                            Phil K
+                            <img class="picts" onclick="addUser('#user2')" src="images\accept-circle.png" alt="Accept">
+                            <img class="picts" onclick="byeUser('#user2')" src="images\close-circle.png" alt="Deny" >
+                        </p>
+                    </li>
+                </ul>
+            </article>
+            <article class="friends" >
+                <h2><span class="number" id="friendsnum"> 418 </span>Your Connections</h2>
+                <ul class="ppl-card">
+                    <li class="user-tag">
+                        <p><img class="picts" src="images\adrien-s.jpg" alt="Adrien's Selfie">
+                            Adrien D
+                        </p>
+                    </li>
+                    <li class="user-tag">
+                        <p><img class="picts" src="images\anne-s.jpg" alt="Anne's Selfie">
+                            Anne J
+                        </p>
+                    </li>
+                    <li class="user-tag">
+                        <p> <img class="picts" src="images\alayne-s.jpg" alt="Alayne's Selfie">
+                            Alayne T
+                        </p>
+                    </li>
+                    <li class="user-tag">
+                        <p><img class="picts" src="images\arry-s.jpg" alt="Arry's Selfie">
+                            Arry T
+                        </p>
+                    </li>
+                    <li id="footer-li">
+                        <a href="#">View More</a>
+                    </li>
+                </ul>
+                
+            </article>
+        </div>  
+    </div>
+    
+</body>
+
+<script src="script.js"></script>
+</html>

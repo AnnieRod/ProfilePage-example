@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Navigation Bar  */
+.nav-bar {
+    background-color: #333333;
+    color:white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav-links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.menu {
+    text-decoration: none;
+    color:white;
+}
+
+#active {
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+}
+
+.sign-out {
+    height: 30px;
+    width: 100px;
+    background-color: #17a2b8;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    box-shadow: 5px 5px #000000;
+    margin-right: 30px;
+}
+
+/* Usercard   */
+.card {
+    border: 3px solid lightgrey;
+    /* width: 30%; */
+    height: 280px;
+    margin:20px;       /* quita si encuentras como mover con flex */
+    
+}
+    
+.card-header {
+    background-color:rgb(23 162 184);
+    height: 70px;
+}
+    
+.card-header img {
+    width: 80px;
+    margin: 30px 0px 20px 25px;
+    border: 4px solid whitesmoke;
+    border-radius: 50%;
+}
+    
+.content p, .content h2, .content a, #text-info h3,  #text-info h4, #text-info p{
+    margin: 10px;
+}
+.content {
+    margin: 50px 0px 20px 20px;
+}
+    
+.location img {
+    width: 10px;
+    height: 15px;
+    margin-right: 3px;
+}
+    
+a img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* Article sobre educación */
+.info {
+    /* width: 30%; */
+    margin: 20px;      /* quita si encuentras como mover con flex */
+    border: 3px solid lightgray;
+}
+#ed-title{
+    color:white;
+    background-color: #333333;
+    height: 30px;
+    padding: 10px 10px 5px 20px;
+}
+
+#text-info {
+    padding: 5px;
+}
+
+#text-info h4 {
+    color: grey;
+}
+
+/* contendores grandes */
+.container {
+    display: flex;
+    padding: 20px 240px;
+}
+
+.main-content {
+    flex: 2;
+}
+
+.aside {
+    flex: 1;
+}
+.user-tag {
+    padding: 10px;
+}
+.requests, .friends {
+    /* width: 20%; */
+    margin: 20px;      /* quita si encuentras como mover con flex */
+    border: 3px solid lightgray;
+}
+
+.requests h2, .friends h2 {
+    color:white;
+    background-color: #333333;
+    height: 30px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.number {
+    padding-left: 5px;
+    margin-right: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: lightgray;
+    color: #333333;
+}
+
+.request-ppl, .ppl-card {
+    list-style-type: none;
+
+}
+
+.picts {
+    border-radius: 50%;
+    width: 15%;
+    height: auto;
+    /* margin: 8px; */
+}
+
+.request-ppl p, .ppl-card p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#footer-li {
+    border-top: 2px solid lightgray;
+    padding: 10px;
+}
